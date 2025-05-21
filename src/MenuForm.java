@@ -36,7 +36,17 @@ public class MenuForm extends JFrame {
         zadanie1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                dispose();
+                RadioTask zadanie1Form = new RadioTask();
+                zadanie1Form.setVisible(true);
+            }
+        });
+        zadanie2Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                CheckTask zadanie2Form = new CheckTask();
+                zadanie2Form.setVisible(true);
             }
         });
     }
