@@ -18,6 +18,10 @@ public class LoginForm extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         int width = 400, height = 300;
         this.setSize(width, height);
+        //ImageIcon icon = new ImageIcon(getClass().getResource("nazwa_zdjecia.png"));
+        //this.setIconImage(icon.getImage());
+        ImageIcon icon = new ImageIcon(getClass().getResource("/figures/test.png"));
+        this.setIconImage(icon.getImage());
 
 
         closeButton.addActionListener(new ActionListener() {

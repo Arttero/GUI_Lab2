@@ -23,7 +23,12 @@ public class WelcomeForm extends JFrame{
 
     private void progression(){
         int counter = 0;
+        int i = 0;
         while(counter <= 100){
+            if ( i < 5 && counter == 80){
+                counter = 0;
+                i++;
+            }
             PleaseWaitLbl.setText("Please Wait");
             progressBar1.setValue(counter);
 
